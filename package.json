@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-arms",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Alibaba Cloud Application Real-Time Monitoring Service (ARMS) for umi.",
   "scripts": {
     "prepublishOnly": "npm run build",
