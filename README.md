@@ -1,4 +1,4 @@
-# [arms.js](#) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chiaweilee/arms.js/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/arms.js.svg?style=flat)](https://www.npmjs.com/package/arms.js) [![npm downloads](https://img.shields.io/npm/dm/arms.js.svg)](https://npmcharts.com/compare/arms.js?minimal=true) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#)
+# [umi-plugin-arms](#) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chiaweilee/umi-plugin-arms/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/umi-plugin-arms.svg?style=flat)](https://www.npmjs.com/package/arms.js) [![npm downloads](https://img.shields.io/npm/dm/umi-plugin-arms.svg)](https://npmcharts.com/compare/umi-plugin-arms?minimal=true) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#)
 
 Alibaba Cloud Application Real-Time Monitoring Service (ARMS).
 
@@ -7,18 +7,22 @@ Alibaba Cloud Application Real-Time Monitoring Service (ARMS).
 ## Installation
 
 ```
-npm install arms.js --save
+npm install umi-plugin-arms
 ```
 
 ## Usage
 
 ```js
-import arms from 'arms.js';
+// umirc.js
 
-const __bl = arms({ pid: 'your pid', active: process.env.NODE_ENV === 'production' });
-
-__bl.api( /* argv */ );
-__bl.sum( /* argv */ );
+plugins: [
+  [
+    'umi-plugin-arms',
+    {
+      pid: 'your arms pid',
+    },
+  ],
+]
 ```
 
 ## Option
