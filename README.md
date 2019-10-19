@@ -25,6 +25,11 @@ plugins: [
 ]
 ```
 
+```js
+// usage example
+window.__bl.api();
+```
+
 ## Option
 
 - `pid` string, required.
