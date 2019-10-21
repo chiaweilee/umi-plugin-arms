@@ -5,7 +5,7 @@ import { IApi } from 'umi-plugin-types';
 
 export default function(api: IApi, option = {} as Option) {
   const opt = json2string(option);
-  const code = `import arms from 'arms.js';arms(${opt});`;
+  const code = `import arms from 'arms.js';window.__bl = arms(${opt});`;
   const target = path.join(__dirname, 'arms.js');
   fs.writeFileSync(target, code);
 
