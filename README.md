@@ -4,6 +4,12 @@ Alibaba Cloud Application Real-Time Monitoring Service (ARMS).
 
 *前端监控专用, F2E only.*
 
+* **Npm:** working under npm.
+* **Import as polyfill:** arms will be imported as a polyfill.
+* **Customized active status:** choose when to active arms.
+* **Woking when not active:** `window.__bl` is awalys available even arms not active.
+* **Debug:** console debug when arms not active.
+
 ## Installation
 
 ```
